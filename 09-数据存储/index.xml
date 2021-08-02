@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>09 数据存储 on Woody&#39;s Notes</title>
+    <link>http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/</link>
+    <description>Recent content in 09 数据存储 on Woody&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL</title>
+      <link>http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/MySQL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/MySQL/</guid>
+      <description>语法    </description>
+    </item>
+    
+  </channel>
+</rss>

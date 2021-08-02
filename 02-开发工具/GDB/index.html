@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,11 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="GDB Commands     list 查看源代码 回车表示命令重复 break 断点  break line number break function name info break   r 运行程序 n 单步运行next step over s 单步运行step in c 继续运行continue p 打印变量print bt 查看函数堆栈 finish 退出函数 info registers 查看寄存器 commands break_list 每次进入断点后执行的命令   ">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>GDB | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +35,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -337,7 +335,7 @@
             
             
                 <span class="flex">
-                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/" class="gdoc-nav__entry ">
+                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/" class="gdoc-nav__entry is-active">
                         GDB
                     </a>
                 </span>
@@ -891,7 +889,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/' href='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/'><span itemprop='name'>02 开发工具</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>GDB</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +914,37 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>GDB</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h2 id="gdb-commands">
+        GDB Commands
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/#gdb-commands" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor GDB Commands" href="#gdb-commands">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h1>
-</div><img src="images/1.jpeg">
+    </h2>
+</div><ul>
+<li>list 查看源代码</li>
+<li>回车表示命令重复</li>
+<li>break 断点
+<ol>
+<li>break line number</li>
+<li>break function name</li>
+<li>info break</li>
+</ol>
+</li>
+<li>r 运行程序</li>
+<li>n 单步运行next step over</li>
+<li>s 单步运行step in</li>
+<li>c 继续运行continue</li>
+<li>p 打印变量print</li>
+<li>bt 查看函数堆栈</li>
+<li>finish 退出函数</li>
+<li>info registers 查看寄存器</li>
+<li>commands break_list 每次进入断点后执行的命令</li>
+<li></li>
+</ul>
 
 
     </article>

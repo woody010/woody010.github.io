@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,18 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="Rust    Installing rustup    curl &ndash;proto &lsquo;=https&rsquo; &ndash;tlsv1.2 -sSf https://sh.rustup.rs | sh
+Installing rust-src component    rustup component add rust-src
+cargo install xargo
+rustup toolchain install nightly rustup default stable
+rustup update
+rustup target add x86_64-unknown-linux-musl rustup target add mips-unknown-linux-musl rustup target add arm-unknown-linux-musleabi rustup target add x86_64-apple-darwin
+Installing cross toolschain    brew install musl-cross &ndash;help &ndash;with-arm &ndash;with-mips
+.cargo/config    [target.">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>Rust | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +42,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -211,7 +216,7 @@
             
             
                 <span class="flex">
-                    <a href="/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/" class="gdoc-nav__entry ">
+                    <a href="/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/" class="gdoc-nav__entry is-active">
                         Rust
                     </a>
                 </span>
@@ -891,7 +896,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/' href='/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/'><span itemprop='name'>01 编程语言</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Rust</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +921,97 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>Rust</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h1 id="rust">
+        Rust
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#rust" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Rust" href="#rust">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
-</div><img src="images/1.jpeg">
+</div><div class="gdoc-page__anchorwrap">
+    <h2 id="installing-rustup">
+        Installing rustup
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#installing-rustup" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing rustup" href="#installing-rustup">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>curl &ndash;proto &lsquo;=https&rsquo; &ndash;tlsv1.2 -sSf <a href="https://sh.rustup.rs">https://sh.rustup.rs</a> | sh</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="installing-rust-src-component">
+        Installing rust-src component
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#installing-rust-src-component" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing rust-src component" href="#installing-rust-src-component">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>rustup component add rust-src</p>
+<p>cargo install xargo</p>
+<p>rustup toolchain install nightly
+rustup default stable</p>
+<p>rustup update</p>
+<p>rustup target add x86_64-unknown-linux-musl
+rustup target add mips-unknown-linux-musl
+rustup target add arm-unknown-linux-musleabi
+rustup target add x86_64-apple-darwin</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="installing-cross-toolschain">
+        Installing cross toolschain
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#installing-cross-toolschain" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing cross toolschain" href="#installing-cross-toolschain">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>brew install musl-cross &ndash;help &ndash;with-arm &ndash;with-mips</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="cargoconfig">
+        .cargo/config
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#cargoconfig" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor .cargo/config" href="#cargoconfig">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>[target.x86_64-unknown-linux-musl]
+linker=&ldquo;x86_64-linux-musl-gcc&rdquo;</p>
+<p>[target.mips-unknown-linux-musl]
+linker=&ldquo;mips-linux-musl-gcc&rdquo;
+rustflags = [&quot;-C&quot;, &ldquo;target-feature=+crt-static&rdquo;, &ldquo;-C&rdquo;, &ldquo;link-arg=-lgcc&rdquo;]</p>
+<p>[target.arm-unknown-linux-musleabi]
+linker=&ldquo;arm-linux-musleabi-gcc&rdquo;</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="creating-a-new-cargo-project">
+        Creating a new Cargo project
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#creating-a-new-cargo-project" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Creating a new Cargo project" href="#creating-a-new-cargo-project">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>xargo init rust</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="building-a-project">
+        Building a project
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#building-a-project" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Building a project" href="#building-a-project">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>xargo build &ndash;verbose
+xargo run &ndash;verbose</p>
+<p>xargo build &ndash;target x86_64-unknown-linux-musl &ndash;release &ndash;verbose
+xargo build &ndash;target mips-unknown-linux-musl &ndash;release &ndash;verbose
+xargo build &ndash;target arm-unknown-linux-musleabi &ndash;release &ndash;verbose
+xargo build &ndash;target x86_64-apple-darwin &ndash;release &ndash;verbose</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="wasm-pack">
+        wasm-pack
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/#wasm-pack" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor wasm-pack" href="#wasm-pack">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>curl <a href="https://rustwasm.github.io/wasm-pack/installer/init.sh">https://rustwasm.github.io/wasm-pack/installer/init.sh</a> -sSf | sh
+cargo install cargo-generate</p>
+<p>#Clone the project template with this command:
+cargo generate &ndash;git <a href="https://github.com/rustwasm/wasm-pack-template">https://github.com/rustwasm/wasm-pack-template</a>
+wasm-pack login
+wasm-pack build
+wasm-pack publish</p>
 
 
     </article>

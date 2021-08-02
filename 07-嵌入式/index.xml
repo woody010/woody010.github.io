@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>07 嵌入式 on Woody&#39;s Notes</title>
+    <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/</link>
+    <description>Recent content in 07 嵌入式 on Woody&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/</guid>
+      <description>Busybox    make menuconfig make
+1.22.1    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.22.1 Cross Compiler gcc 4.4.3
+1.2.0 for QQ2440    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.2.0
+Cross Compiler arm-linux-gnueabi-gcc 4.7 arm-linux-gcc 3.4.1
+mknod ./dev/console c 5 1 mknod ./dev/null c 1 3
+can&amp;rsquo;t open /dev/tty3: No such file or directory can&amp;rsquo;t open /dev/tty2: No such file or directory can&amp;rsquo;t open /dev/tty4: No such file or directory
+解决办法：
+ln -sf .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/</guid>
+      <description>工作目录：Ubuntu64虚拟机 /home/woody/LHQ/src/openwrt/openwrt.git.19.07     开启FPU Emulator
+go hardfloat
+go softfloat
+helloclang /lib/ld-musl-mips.so.1 helloclang_static
+hellorust /lib/ld-musl-mips.so.1
+不开启FPU Emulator go hardfloat Illegal instruction
+go softfloat
+helloclang /lib/ld-musl-mips.so.1 helloclang_static
+hellorust /lib/ld-musl-mips.so.1 hellorust_satic
+ 工作目录：Ubuntu32虚拟机 /home/woody/LHQ/src/openwrt.git     硬件改造：    http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd http://www.rs-online.com/designspark/electronics/blog/hacking-the-tp-link-tl-wr703n 打开jtag http://www.devttys0.com/2014/02/re-enabling-jtag-and-debugging-the-wrt120n/ 不标准jtag http://wiki.openwrt.org/toh/tp-link/tl-wr841nd
+jtag: http://wiki.openwrt.org/doc/hardware/port.jtag
+在电路设计时，JTAG口的TCK要加3.3V上拉。上拉电阻值取4.7K。另外，要考虑到在成品阶段(此时已不需要通过JTAG编程)，将TCK.TMS.TDI引脚接地，这样更能提高系统的抗干扰能力，对于提高系统的稳定性是非常主要的。
+ WR1041N 硬件信息    W1 wlan C0:61:18:3C:35:96 br-lan C0:61:18:3C:35:97
+W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmware</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/uboot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/uboot/</guid>
+      <description>U-Boot    工作目录：Ubuntu32 /home/woody/LHQ/src/u-boot/2014.07
+Ready-to-use binaries of ELDK v5.5 are available on our FTP server in the ftp://ftp.denx.de/pub/eldk/5.5/ directory.
+ARM source /opt/eldk-5.5/armv4t/environment-setup-armv4t-linux-gnueabi make O=/home/woody/LHQ/src/build/uboot/2016.02.arm4vt smdk2410_config all
+make O=/home/woody/LHQ/src/build/uboot/2016.08.arm4vt smdk2410_config all Sandbox
+make O=/home/woody/LHQ/src/build/uboot/2015.07.sandbox sandbox_config all NO_SDL=1 ./u-boot
+2016.05    1.1.6    arm-linux-gcc 3.4.1 @Ubuntu
+make 100ask24x0_config make</description>
+    </item>
+    
+    <item>
+      <title>JLink</title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/JLink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/JLink/</guid>
+      <description>JLink    </description>
+    </item>
+    
+    <item>
+      <title>QQ2440</title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/QQ2440/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/QQ2440/</guid>
+      <description>QQ2440    硬件信息    触摸屏：ltv350qv-f04-0br 320*240 24bit
+地址空间映射    0x00000000 - 0x00001000 Nand Flash的前4k 0x30000000 - 0x33FFFFFF 64M SDRAM 0x30000000 - 0x3FFFFFFF 128M*2 SDRAM 地址空间 0x48000000 - 0x5FFFFFFF 寄存器地址空间 0x48000000 - 0x48000030 存储控制器  寄存器    PC的值为当前正在执行的指令+8 CPSR
+ 31 30 29 28 7 6 5 4 3 2 1 0 | N | Z | C | V | | I | F | T | M4 | M3 | M2 | M1 | M0 | T[5] 为1表示CPU处于THUMB状态，为0表示处于ARM状态。 I位和F位为1表示禁止IRQ和FIQ.</description>
+    </item>
+    
+  </channel>
+</rss>

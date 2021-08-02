@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>08 虚拟化 on Woody&#39;s Notes</title>
+    <link>http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/</link>
+    <description>Recent content in 08 虚拟化 on Woody&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/Docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/Docker/</guid>
+      <description>Docker    </description>
+    </item>
+    
+  </channel>
+</rss>

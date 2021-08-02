@@ -7,11 +7,263 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://woody010.github.io/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/vim/</link>
+      <link>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://woody010.github.io/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/vim/</guid>
-      <description>VIM Shortcut</description>
+      <guid>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/</guid>
+      <description>知识点     语言的特点和优势 数据类型及定义 bool, string, number, 流程控制Flow control（循环for, 分支if else and switch; 错误处理defer, panic, recover, Errors） Pointers, Structs, Arrays, Slices, Range, Maps OOP(Methods and Interfaces), Stringers Type Assertions, Type switches Readers Goroutines, Channels, Buffered Channels, Select, sync.Mutex  测试和调试     单元测试 go test  MVC框架     编译、调试  go build helloWorld dlv debug   日志输出 错误处理 交叉编译 GOARCH=mips GOOS=linux go build -o test helloworld.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Markdown/</guid>
+      <description>Markdown    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/</guid>
+      <description>Python命令    ###启动简易Web服务器
+python3 -m http.server 8080 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Rust/</guid>
+      <description>Rust    Installing rustup    curl &amp;ndash;proto &amp;lsquo;=https&amp;rsquo; &amp;ndash;tlsv1.2 -sSf https://sh.rustup.rs | sh
+Installing rust-src component    rustup component add rust-src
+cargo install xargo
+rustup toolchain install nightly rustup default stable
+rustup update
+rustup target add x86_64-unknown-linux-musl rustup target add mips-unknown-linux-musl rustup target add arm-unknown-linux-musleabi rustup target add x86_64-apple-darwin
+Installing cross toolschain    brew install musl-cross &amp;ndash;help &amp;ndash;with-arm &amp;ndash;with-mips
+.cargo/config    [target.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/</guid>
+      <description>Installing Flutter    export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn git clone -b dev https://github.com/flutter/flutter.git export PATH=&amp;quot;$PWD/flutter/bin:$PATH&amp;quot; cd ./flutter flutter doctor
+Create a Dart package    flutter create &amp;ndash;template=package package-name
+Opening a project in Xcode    open ios/Runner.xcworkspace
+get android sha1    keytool -list -v -keystore &amp;ldquo;./debug.keystore&amp;rdquo; -alias androiddebugkey -storepass android -keypass android
+Make release    keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/</guid>
+      <description>多人多项目多版本Git使用要求     每个人一个分支 每个人一个项目分支 每天update trunk只用来保持最新代码 发布的时候打tag 每次提交必须写comment  初始化    git init  分支    Branch git branch mybranch git checkout mybranch
+工作场景切换    git stash git pull git stash pop
+补丁    Patch git diff master &amp;gt; patch1 git apply patch1 (—stat —check)
+合并    Merge from dev to mybranch git merge dev
+回滚    git reset —hard HEAD^</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Tcpdump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Tcpdump/</guid>
+      <description>Monitor HTTP traffic including request and response headers and message body sudo tcpdump -i 6 -A -s 0 &amp;lsquo;tcp port 8080 and (((ip[2:2] - ((ip[0]&amp;amp;0xf)&amp;laquo;2)) - ((tcp[12]&amp;amp;0xf0)&amp;raquo;2)) != 0)&amp;rsquo; -n</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/</guid>
+      <description>Busybox    make menuconfig make
+1.22.1    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.22.1 Cross Compiler gcc 4.4.3
+1.2.0 for QQ2440    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.2.0
+Cross Compiler arm-linux-gnueabi-gcc 4.7 arm-linux-gcc 3.4.1
+mknod ./dev/console c 5 1 mknod ./dev/null c 1 3
+can&amp;rsquo;t open /dev/tty3: No such file or directory can&amp;rsquo;t open /dev/tty2: No such file or directory can&amp;rsquo;t open /dev/tty4: No such file or directory
+解决办法：
+ln -sf .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/</guid>
+      <description>工作目录：Ubuntu64虚拟机 /home/woody/LHQ/src/openwrt/openwrt.git.19.07     开启FPU Emulator
+go hardfloat
+go softfloat
+helloclang /lib/ld-musl-mips.so.1 helloclang_static
+hellorust /lib/ld-musl-mips.so.1
+不开启FPU Emulator go hardfloat Illegal instruction
+go softfloat
+helloclang /lib/ld-musl-mips.so.1 helloclang_static
+hellorust /lib/ld-musl-mips.so.1 hellorust_satic
+ 工作目录：Ubuntu32虚拟机 /home/woody/LHQ/src/openwrt.git     硬件改造：    http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd http://www.rs-online.com/designspark/electronics/blog/hacking-the-tp-link-tl-wr703n 打开jtag http://www.devttys0.com/2014/02/re-enabling-jtag-and-debugging-the-wrt120n/ 不标准jtag http://wiki.openwrt.org/toh/tp-link/tl-wr841nd
+jtag: http://wiki.openwrt.org/doc/hardware/port.jtag
+在电路设计时，JTAG口的TCK要加3.3V上拉。上拉电阻值取4.7K。另外，要考虑到在成品阶段(此时已不需要通过JTAG编程)，将TCK.TMS.TDI引脚接地，这样更能提高系统的抗干扰能力，对于提高系统的稳定性是非常主要的。
+ WR1041N 硬件信息    W1 wlan C0:61:18:3C:35:96 br-lan C0:61:18:3C:35:97
+W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmware</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/uboot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/uboot/</guid>
+      <description>U-Boot    工作目录：Ubuntu32 /home/woody/LHQ/src/u-boot/2014.07
+Ready-to-use binaries of ELDK v5.5 are available on our FTP server in the ftp://ftp.denx.de/pub/eldk/5.5/ directory.
+ARM source /opt/eldk-5.5/armv4t/environment-setup-armv4t-linux-gnueabi make O=/home/woody/LHQ/src/build/uboot/2016.02.arm4vt smdk2410_config all
+make O=/home/woody/LHQ/src/build/uboot/2016.08.arm4vt smdk2410_config all Sandbox
+make O=/home/woody/LHQ/src/build/uboot/2015.07.sandbox sandbox_config all NO_SDL=1 ./u-boot
+2016.05    1.1.6    arm-linux-gcc 3.4.1 @Ubuntu
+make 100ask24x0_config make</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/Docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/08-%E8%99%9A%E6%8B%9F%E5%8C%96/Docker/</guid>
+      <description>Docker    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8/</guid>
+      <description>ipad air 2 flutter: queryData.devicePixelRatio:2.0 flutter: queryData.size.width:768.0 flutter: queryData.size.height:1024.0 flutter: widthPixel:1536.0 flutter: heightPixel:2048.0 flutter: queryData.textScaleFactor:1.0
+iphone 5 flutter: queryData.devicePixelRatio:2.0 flutter: queryData.size.width:320.0 flutter: queryData.size.height:568.0 flutter: widthPixel:640.0 flutter: heightPixel:1136.0 flutter: queryData.textScaleFactor:1.0 flutter: Running on iPhone5,2
+icon图标尺寸：
+drawable-hdpi-icon 7272 drawable-ldpi-icon 3636 drawable-mdpi-icon 4848 drawable-xhdpi-icon 9696 drawable-xxhdpi-icon 144144 drawable-xxxhdpi-icon 192192 启动页：
+横屏 高×宽
+drawable-land-hdpi-screen 480800 drawable-land-ldpi-screen 200320 drawable-land-mdpi-screen 320480 drawable-land-xhdpi-screen 7201280 drawable-land-xxhdpi-screen 9601600 drawable-land-xxxhdpi-screen 12801920 竖屏 高×宽
+drawable-port-hdpi-screen 800480 drawable-port-ldpi-screen 320200 drawable-port-mdpi-screen 480320 drawable-port-xhdpi-screen 1280720 drawable-port-xxhdpi-screen 1600960 drawable-port-xxxhdpi-screen 19201280</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/english_level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/english_level/</guid>
+      <description>Level 1：赖世雄音标； 赖世雄美语从头学（词汇量初上730，初下631，中上1067，中下1133）； English Through Pictures（词汇量Book I 200, Book II 500, Book III 1000）; Level 2：ESLPOD 6 Books； Word by Word 4500词 Level 3：美语发音视频 Level 4：开口模仿流利说 Level 5：系统模仿期 走遍美国 Level 6：赖世雄语法
+以听说为目标（文盲英语） 尽早发现和纠正错误，不要重复自己的错误（社会化） 不断激励自己（闯关）
+第一阶段：辨音（单词、短语） 目标：看到不认识的单词可以准确的读出来； 听到不认识的单子可以准确的拼出来 方法：a. 音标练习3个月，达到听准、念准的目标 b. 自然拼读1个月，熟悉发音规律
+第二阶段：语感、节奏（句子） 目标： 可以顺畅的大声朗读新材料，掌握断句、节奏、语调、语气，没有明显的口音 方法：a. 发音训练3个月 b. 大量的听和阅读 c. 经典儿歌和英文歌曲
+http://www.audiofilemagazine.com/
+http://www.bego.cc/u/1126724/1945064 http://www.ctfile.com/shared/folder_1658549_c25e7b66/
+http://cfsxhdkd.blog.163.com/blog/static/625374201292410460740/ http://www.ctfile.com/shared/folder_1658549_c25e7b66/ http://blog.sina.com.cn/u/1996491363
+http://www.openculture.com/ http://successfulenglish.com/
+1999: Holes by Louis Sachar (Publisher: Frances Foster) This is an adventure and mystery story involving a group of boys being made to dig holes as punishment.</description>
+    </item>
+    
+    <item>
+      <title>GCC</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/</guid>
+      <description>GCC    编译选项     -c 预处理、编译和汇编源文件，但不链接 -S 编译后即停止，不汇编 -E 预处理后即停止 -Wall 显示所有警告 -g 加入调试信息 -O 优化选项，有多个-O时最后一个生效  连接器选项      -lmylib 寻找libmylib.a库文件
+  -nostartfiles 不链接系统启动文件，在编译bootloader、kernel时有用
+  -nostdlib 不链接系统启动文件和标准库文件
+  -static 生成静态文件，不使用共享库
+  -shared 生成共享库文件
+  -T 指定代码段、数据段、bss段的起始地址，也可以用来指定一个链接脚本
+   如何查看编译器预定义的符号 touch a.h gcc -E -dM a.h
+  编译错误    </description>
+    </item>
+    
+    <item>
+      <title>GDB</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/</guid>
+      <description>GDB Commands     list 查看源代码 回车表示命令重复 break 断点  break line number break function name info break   r 运行程序 n 单步运行next step over s 单步运行step in c 继续运行continue p 打印变量print bt 查看函数堆栈 finish 退出函数 info registers 查看寄存器 commands break_list 每次进入断点后执行的命令   </description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/iOS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/iOS/</guid>
+      <description>iOS      命令行编译打包iOS App xcodebuild -sdk iphoneos9.1 -target AHD_iPhone_3.5 -configuration Release CODE_SIGN_IDENTITY=&amp;ldquo;iPhone Developer: bingxue zhang (CAP3RNPRFC)&amp;rdquo; clean build
+xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/AHD_iPhone_3.5.app -o build/Release-iphoneos/AHD_iPhone_3.5.ipa &amp;ndash;sign &amp;ldquo;iPhone Developer: bingxue zhang (CAP3RNPRFC)&amp;rdquo;
+/usr/bin/xcrun -sdk iphoneos PackageApplication -v &amp;ldquo;${RELEASE_BUILDDIR}/${APPLICATION_NAME}.app&amp;rdquo; -o &amp;ldquo;${BUILD_HISTORY_DIR}/${APPLICATION_NAME}.ipa&amp;rdquo; &amp;ndash;sign &amp;ldquo;${DEVELOPER_NAME}&amp;rdquo; &amp;ndash;embed &amp;ldquo;${PROVISONING_PROFILE}”
+   </description>
+    </item>
+    
+    <item>
+      <title>JLink</title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/JLink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/JLink/</guid>
+      <description>JLink    </description>
+    </item>
+    
+    <item>
+      <title>MacOSX</title>
+      <link>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/MacOSX/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/MacOSX/</guid>
+      <description>mysqld    /usr/local/mysql/support-files/mysql.server  Installing the Cross compile tools    brew install musl-cross &amp;ndash;with-arm &amp;ndash;with-mips
+chrome 跨域    &amp;ndash;disable-web-security &amp;ndash;user-data-dir
+#mysql 查看和打开日志 SHOW VARIABLES LIKE &amp;ldquo;general_log%&amp;quot;;
+SET GLOBAL general_log = &amp;lsquo;ON&amp;rsquo;;</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/MySQL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/09-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/MySQL/</guid>
+      <description>语法    </description>
+    </item>
+    
+    <item>
+      <title>QQ2440</title>
+      <link>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/QQ2440/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/QQ2440/</guid>
+      <description>QQ2440    硬件信息    触摸屏：ltv350qv-f04-0br 320*240 24bit
+地址空间映射    0x00000000 - 0x00001000 Nand Flash的前4k 0x30000000 - 0x33FFFFFF 64M SDRAM 0x30000000 - 0x3FFFFFFF 128M*2 SDRAM 地址空间 0x48000000 - 0x5FFFFFFF 寄存器地址空间 0x48000000 - 0x48000030 存储控制器  寄存器    PC的值为当前正在执行的指令+8 CPSR
+ 31 30 29 28 7 6 5 4 3 2 1 0 | N | Z | C | V | | I | F | T | M4 | M3 | M2 | M1 | M0 | T[5] 为1表示CPU处于THUMB状态，为0表示处于ARM状态。 I位和F位为1表示禁止IRQ和FIQ.</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/</guid>
+      <description>Vim    ^ 行首 $ 行尾 0 第一个字符
+gg 文件头 G 文件尾</description>
     </item>
     
   </channel>

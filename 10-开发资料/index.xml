@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>10 开发资料 on Woody&#39;s Notes</title>
+    <link>http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/</link>
+    <description>Recent content in 10 开发资料 on Woody&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/10-%E5%BC%80%E5%8F%91%E8%B5%84%E6%96%99/%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8/</guid>
+      <description>ipad air 2 flutter: queryData.devicePixelRatio:2.0 flutter: queryData.size.width:768.0 flutter: queryData.size.height:1024.0 flutter: widthPixel:1536.0 flutter: heightPixel:2048.0 flutter: queryData.textScaleFactor:1.0
+iphone 5 flutter: queryData.devicePixelRatio:2.0 flutter: queryData.size.width:320.0 flutter: queryData.size.height:568.0 flutter: widthPixel:640.0 flutter: heightPixel:1136.0 flutter: queryData.textScaleFactor:1.0 flutter: Running on iPhone5,2
+icon图标尺寸：
+drawable-hdpi-icon 7272 drawable-ldpi-icon 3636 drawable-mdpi-icon 4848 drawable-xhdpi-icon 9696 drawable-xxhdpi-icon 144144 drawable-xxxhdpi-icon 192192 启动页：
+横屏 高×宽
+drawable-land-hdpi-screen 480800 drawable-land-ldpi-screen 200320 drawable-land-mdpi-screen 320480 drawable-land-xhdpi-screen 7201280 drawable-land-xxhdpi-screen 9601600 drawable-land-xxxhdpi-screen 12801920 竖屏 高×宽
+drawable-port-hdpi-screen 800480 drawable-port-ldpi-screen 320200 drawable-port-mdpi-screen 480320 drawable-port-xhdpi-screen 1280720 drawable-port-xxhdpi-screen 1600960 drawable-port-xxxhdpi-screen 19201280</description>
+    </item>
+    
+  </channel>
+</rss>

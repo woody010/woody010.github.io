@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>02 开发工具 on Woody&#39;s Notes</title>
+    <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 02 开发工具 on Woody&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/</guid>
+      <description>Installing Flutter    export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn git clone -b dev https://github.com/flutter/flutter.git export PATH=&amp;quot;$PWD/flutter/bin:$PATH&amp;quot; cd ./flutter flutter doctor
+Create a Dart package    flutter create &amp;ndash;template=package package-name
+Opening a project in Xcode    open ios/Runner.xcworkspace
+get android sha1    keytool -list -v -keystore &amp;ldquo;./debug.keystore&amp;rdquo; -alias androiddebugkey -storepass android -keypass android
+Make release    keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/</guid>
+      <description>多人多项目多版本Git使用要求     每个人一个分支 每个人一个项目分支 每天update trunk只用来保持最新代码 发布的时候打tag 每次提交必须写comment  初始化    git init  分支    Branch git branch mybranch git checkout mybranch
+工作场景切换    git stash git pull git stash pop
+补丁    Patch git diff master &amp;gt; patch1 git apply patch1 (—stat —check)
+合并    Merge from dev to mybranch git merge dev
+回滚    git reset —hard HEAD^</description>
+    </item>
+    
+    <item>
+      <title>GCC</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/</guid>
+      <description>GCC    编译选项     -c 预处理、编译和汇编源文件，但不链接 -S 编译后即停止，不汇编 -E 预处理后即停止 -Wall 显示所有警告 -g 加入调试信息 -O 优化选项，有多个-O时最后一个生效  连接器选项      -lmylib 寻找libmylib.a库文件
+  -nostartfiles 不链接系统启动文件，在编译bootloader、kernel时有用
+  -nostdlib 不链接系统启动文件和标准库文件
+  -static 生成静态文件，不使用共享库
+  -shared 生成共享库文件
+  -T 指定代码段、数据段、bss段的起始地址，也可以用来指定一个链接脚本
+   如何查看编译器预定义的符号 touch a.h gcc -E -dM a.h
+  编译错误    </description>
+    </item>
+    
+    <item>
+      <title>GDB</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GDB/</guid>
+      <description>GDB Commands     list 查看源代码 回车表示命令重复 break 断点  break line number break function name info break   r 运行程序 n 单步运行next step over s 单步运行step in c 继续运行continue p 打印变量print bt 查看函数堆栈 finish 退出函数 info registers 查看寄存器 commands break_list 每次进入断点后执行的命令   </description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/iOS/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/iOS/</guid>
+      <description>iOS      命令行编译打包iOS App xcodebuild -sdk iphoneos9.1 -target AHD_iPhone_3.5 -configuration Release CODE_SIGN_IDENTITY=&amp;ldquo;iPhone Developer: bingxue zhang (CAP3RNPRFC)&amp;rdquo; clean build
+xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/AHD_iPhone_3.5.app -o build/Release-iphoneos/AHD_iPhone_3.5.ipa &amp;ndash;sign &amp;ldquo;iPhone Developer: bingxue zhang (CAP3RNPRFC)&amp;rdquo;
+/usr/bin/xcrun -sdk iphoneos PackageApplication -v &amp;ldquo;${RELEASE_BUILDDIR}/${APPLICATION_NAME}.app&amp;rdquo; -o &amp;ldquo;${BUILD_HISTORY_DIR}/${APPLICATION_NAME}.ipa&amp;rdquo; &amp;ndash;sign &amp;ldquo;${DEVELOPER_NAME}&amp;rdquo; &amp;ndash;embed &amp;ldquo;${PROVISONING_PROFILE}”
+   </description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/</guid>
+      <description>Vim    ^ 行首 $ 行尾 0 第一个字符
+gg 文件头 G 文件尾</description>
+    </item>
+    
+  </channel>
+</rss>

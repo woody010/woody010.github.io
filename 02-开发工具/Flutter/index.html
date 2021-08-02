@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,15 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="Installing Flutter    export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn git clone -b dev https://github.com/flutter/flutter.git export PATH=&quot;$PWD/flutter/bin:$PATH&quot; cd ./flutter flutter doctor
+Create a Dart package    flutter create &ndash;template=package package-name
+Opening a project in Xcode    open ios/Runner.xcworkspace
+get android sha1    keytool -list -v -keystore &ldquo;./debug.keystore&rdquo; -alias androiddebugkey -storepass android -keypass android
+Make release    keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>Flutter | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +39,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -265,7 +267,7 @@
             
             
                 <span class="flex">
-                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/" class="gdoc-nav__entry ">
+                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/" class="gdoc-nav__entry is-active">
                         Flutter
                     </a>
                 </span>
@@ -891,7 +893,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/' href='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/'><span itemprop='name'>02 开发工具</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Flutter</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +918,82 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>Flutter</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h2 id="installing-flutter">
+        Installing Flutter
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#installing-flutter" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing Flutter" href="#installing-flutter">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h1>
-</div><img src="images/1.jpeg">
+    </h2>
+</div><p>export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+git clone -b dev <a href="https://github.com/flutter/flutter.git">https://github.com/flutter/flutter.git</a>
+export PATH=&quot;$PWD/flutter/bin:$PATH&quot;
+cd ./flutter
+flutter doctor</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="create-a-dart-package">
+        Create a Dart package
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#create-a-dart-package" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Create a Dart package" href="#create-a-dart-package">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>flutter create &ndash;template=package package-name</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="opening-a-project-in-xcode">
+        Opening a project in Xcode
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#opening-a-project-in-xcode" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Opening a project in Xcode" href="#opening-a-project-in-xcode">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>open ios/Runner.xcworkspace</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="get-android-sha1">
+        get android sha1
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#get-android-sha1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor get android sha1" href="#get-android-sha1">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>keytool -list -v -keystore &ldquo;./debug.keystore&rdquo; -alias androiddebugkey -storepass android -keypass android</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="make-release">
+        Make release
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#make-release" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Make release" href="#make-release">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</p>
+<p>flutter build appbundle
+flutter build appbundle &ndash;target-platform android-arm,android-arm64,android-x64
+flutter build apk &ndash;target-platform android-arm,android-arm64,android-x64 &ndash;split-per-abi
+flutter build apk &ndash;target-platform android-arm,android-arm64,android-x64</p>
+<p>flutter build web</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="heading">
+        
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Flutter/#heading" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor " href="#heading">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><ol>
+<li>could not download from dl.google.com</li>
+</ol>
+<p>修改下面2个文件
+your_flutter_sdk/packages/flutter_tools/gradle/flutter.gradle
+and
+your_app_project/android/build.gradle</p>
+<pre><code>repositories {
+</code></pre>
+<p>//        google()
+//        jcenter()
+maven{ url &lsquo;<a href="https://maven.aliyun.com/repository/google'">https://maven.aliyun.com/repository/google'</a> }
+maven{ url &lsquo;<a href="https://maven.aliyun.com/repository/jcenter'">https://maven.aliyun.com/repository/jcenter'</a> }
+maven{url &lsquo;<a href="http://maven.aliyun.com/nexus/content/groups/public'%7D">http://maven.aliyun.com/nexus/content/groups/public'}</a></p>
+<pre><code>}
+</code></pre>
 
 
     </article>

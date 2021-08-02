@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,15 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="多人多项目多版本Git使用要求     每个人一个分支 每个人一个项目分支 每天update trunk只用来保持最新代码 发布的时候打tag 每次提交必须写comment  初始化    git init  分支    Branch git branch mybranch git checkout mybranch
+工作场景切换    git stash git pull git stash pop
+补丁    Patch git diff master &gt; patch1 git apply patch1 (—stat —check)
+合并    Merge from dev to mybranch git merge dev
+回滚    git reset —hard HEAD^">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>Git | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +39,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -289,7 +291,7 @@
             
             
                 <span class="flex">
-                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/" class="gdoc-nav__entry ">
+                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/" class="gdoc-nav__entry is-active">
                         Git
                     </a>
                 </span>
@@ -891,7 +893,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/' href='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/'><span itemprop='name'>02 开发工具</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Git</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +918,110 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>Git</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h2 id="多人多项目多版本git使用要求">
+        多人多项目多版本Git使用要求
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#多人多项目多版本git使用要求" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 多人多项目多版本Git使用要求" href="#%e5%a4%9a%e4%ba%ba%e5%a4%9a%e9%a1%b9%e7%9b%ae%e5%a4%9a%e7%89%88%e6%9c%acgit%e4%bd%bf%e7%94%a8%e8%a6%81%e6%b1%82">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h1>
-</div><img src="images/1.jpeg">
+    </h2>
+</div><ol>
+<li>每个人一个分支</li>
+<li>每个人一个项目分支</li>
+<li>每天update</li>
+<li>trunk只用来保持最新代码</li>
+<li>发布的时候打tag</li>
+<li>每次提交必须写comment</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="初始化">
+        初始化
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#初始化" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 初始化" href="#%e5%88%9d%e5%a7%8b%e5%8c%96">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><pre><code>git init
+</code></pre>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="分支">
+        分支
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#分支" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 分支" href="#%e5%88%86%e6%94%af">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>Branch
+git branch mybranch
+git checkout mybranch</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="工作场景切换">
+        工作场景切换
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#工作场景切换" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 工作场景切换" href="#%e5%b7%a5%e4%bd%9c%e5%9c%ba%e6%99%af%e5%88%87%e6%8d%a2">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>git stash
+git pull
+git stash pop</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="补丁">
+        补丁
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#补丁" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 补丁" href="#%e8%a1%a5%e4%b8%81">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>Patch
+git diff master &gt; patch1
+git apply patch1   (—stat —check)</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="合并">
+        合并
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#合并" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 合并" href="#%e5%90%88%e5%b9%b6">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>Merge from dev to mybranch
+git merge dev</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="回滚">
+        回滚
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#回滚" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 回滚" href="#%e5%9b%9e%e6%bb%9a">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>git reset —hard HEAD^</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="查看某次commit的内容">
+        查看某次commit的内容
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#查看某次commit的内容" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 查看某次commit的内容" href="#%e6%9f%a5%e7%9c%8b%e6%9f%90%e6%ac%a1commit%e7%9a%84%e5%86%85%e5%ae%b9">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>git show commit-id</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="根据commit-log查找">
+        根据commit log查找
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#根据commit-log查找" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 根据commit log查找" href="#%e6%a0%b9%e6%8d%aecommit-log%e6%9f%a5%e6%89%be">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>git log &ndash;grep=xxx</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="根据author查找">
+        根据Author查找
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/#根据author查找" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 根据Author查找" href="#%e6%a0%b9%e6%8d%aeauthor%e6%9f%a5%e6%89%be">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>git log &ndash;author=xxx</p>
+<p>###svn缺点</p>
+<ol>
+<li>严重依赖网络</li>
+<li>移动文件夹</li>
+<li>冲突强制解决</li>
+</ol>
 
 
     </article>

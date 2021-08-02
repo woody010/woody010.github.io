@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,11 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="知识点     语言的特点和优势 数据类型及定义 bool, string, number, 流程控制Flow control（循环for, 分支if else and switch; 错误处理defer, panic, recover, Errors） Pointers, Structs, Arrays, Slices, Range, Maps OOP(Methods and Interfaces), Stringers Type Assertions, Type switches Readers Goroutines, Channels, Buffered Channels, Select, sync.Mutex  测试和调试     单元测试 go test  MVC框架     编译、调试  go build helloWorld dlv debug   日志输出 错误处理 交叉编译 GOARCH=mips GOOS=linux go build -o test helloworld.">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>Golang | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +35,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -139,7 +137,7 @@
             
             
                 <span class="flex">
-                    <a href="/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/" class="gdoc-nav__entry ">
+                    <a href="/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/" class="gdoc-nav__entry is-active">
                         Golang
                     </a>
                 </span>
@@ -891,7 +889,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/' href='/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/'><span itemprop='name'>01 编程语言</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Golang</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +914,346 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>Golang</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h2 id="知识点">
+        知识点
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#知识点" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 知识点" href="#%e7%9f%a5%e8%af%86%e7%82%b9">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h1>
-</div><img src="images/1.jpeg">
+    </h2>
+</div><ul>
+<li>语言的特点和优势</li>
+<li>数据类型及定义
+bool, string, number,</li>
+<li>流程控制Flow control（循环for, 分支if else and switch; 错误处理defer, panic, recover, Errors）</li>
+<li>Pointers, Structs, Arrays, Slices, Range, Maps</li>
+<li>OOP(Methods and Interfaces), Stringers</li>
+<li>Type Assertions, Type switches</li>
+<li>Readers</li>
+<li>Goroutines, Channels, Buffered Channels, Select, sync.Mutex</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="测试和调试">
+        测试和调试
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#测试和调试" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 测试和调试" href="#%e6%b5%8b%e8%af%95%e5%92%8c%e8%b0%83%e8%af%95">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><ul>
+<li>单元测试 go test</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="mvc框架">
+        MVC框架
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#mvc框架" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor MVC框架" href="#mvc%e6%a1%86%e6%9e%b6">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><ul>
+<li>编译、调试
+<ol>
+<li>go build helloWorld</li>
+<li>dlv debug</li>
+</ol>
+</li>
+<li>日志输出</li>
+<li>错误处理</li>
+<li>交叉编译
+GOARCH=mips GOOS=linux go build -o test helloworld.go
+go tool dist list  //查看GOARCH和GOOS</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="webassembly">
+        Webassembly
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#webassembly" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Webassembly" href="#webassembly">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>GOARCH=wasm GOOS=js go build -ldflags &ldquo;-s -w&rdquo; -o test.wasm helloworld.go</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="notes">
+        Notes
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#notes" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Notes" href="#notes">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><ol>
+<li>By convention, the package name is the same as the last element of the import path.</li>
+<li>A name is exported if it begins with a capital letter.
+When importing a package, you can refer only to its exported names. Any &ldquo;unexported&rdquo; names are not accessible from outside the package.</li>
+<li>The type comes after the variable name.
+<a href="https://blog.golang.org/gos-declaration-syntax">https://blog.golang.org/gos-declaration-syntax</a></li>
+<li>When two or more consecutive named function parameters share a type, you can omit the type from all but the last.</li>
+<li>A function can return any number of results.</li>
+<li>Go&rsquo;s return values may be named. If so, they are treated as variables defined at the top of the function.</li>
+<li>The var statement declares a list of variables.A var declaration can include initializers, one per variable.
+If an initializer is present, the type can be omitted; the variable will take the type of the initializer.</li>
+<li>Inside a function, the := short assignment statement can be used in place of a var declaration with implicit type.
+Outside a function, every statement begins with a keyword (var, func, and so on) and so the := construct is not available.</li>
+<li>Go&rsquo;s basic types are</li>
+</ol>
+<pre><code>
+bool
+string
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+byte // alias for uint8
+rune // alias for int32
+     // represents a Unicode code point
+float32 float64
+complex64 complex128
+</code></pre>
+<p>The example shows variables of several types, and also that variable declarations may be &ldquo;factored&rdquo; into blocks, as with import statements.
+The int, uint, and uintptr types are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems. When you need an integer value you should use int unless you have a specific reason to use a sized or unsigned integer type.</p>
+<ol start="10">
+<li>Variables declared without an explicit initial value are given their zero value.
+The zero value is:
+0 for numeric types,
+false the boolean type, and
+&quot;&quot; (the empty string) for strings.</li>
+<li>When declaring a variable without specifying an explicit type (either by using the := syntax or var = expression syntax), the variable&rsquo;s type is inferred from the value on the right hand side.</li>
+<li>Constants are declared like variables, but with the const keyword.
+Constants can be character, string, boolean, or numeric values.
+Constants cannot be declared using the := syntax.</li>
+<li>Numeric constants are high-precision values.
+An untyped constant takes the type needed by its context.</li>
+<li>Go has only one looping construct, the for loop.
+The init statement will often be a short variable declaration, and the variables declared there are visible only in the scope of the for statement.
+Unlike other languages like C, Java, or Javascript there are no parentheses surrounding the three components of the for statement and the braces { } are always required.</li>
+</ol>
+<ul>
+<li>The init and post statement are optional.</li>
+<li>At that point you can drop the semicolons: C&rsquo;s while is spelled for in Go.</li>
+<li>If you omit the loop condition it loops forever, so an infinite loop is compactly expressed.</li>
+</ul>
+<ol start="15">
+<li>Go&rsquo;s if statements are like its for loops; the expression need not be surrounded by parentheses ( ) but the braces { } are required.</li>
+</ol>
+<ul>
+<li>Like for, the if statement can start with a short statement to execute before the condition.</li>
+<li>Variables declared by the statement are only in scope until the end of the if.</li>
+<li>Variables declared inside an if short statement are also available inside any of the else blocks.</li>
+</ul>
+<ol start="16">
+<li>A case body in switch statement breaks automatically, unless it ends with a fallthrough statement.</li>
+</ol>
+<ul>
+<li>Switch cases evaluate cases from top to bottom, stopping when a case succeeds.</li>
+<li>Switch without a condition is the same as switch true.
+This construct can be a clean way to write long if-then-else chains.</li>
+</ul>
+<ol start="17">
+<li>A defer statement defers the execution of a function until the surrounding function returns.</li>
+</ol>
+<ul>
+<li>The deferred call&rsquo;s arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.</li>
+<li>A defer statement defers the execution of a function until the surrounding function returns.</li>
+<li>The deferred call&rsquo;s arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.</li>
+<li>Defer is commonly used to simplify functions that perform various clean-up actions.</li>
+<li>Deferred functions may read and assign to the returning function&rsquo;s named return values.</li>
+</ul>
+<ol start="18">
+<li>Panic is a built-in function that stops the ordinary flow of control and begins panicking. When the function F calls panic, execution of F stops, any deferred functions in F are executed normally, and then F returns to its caller. To the caller, F then behaves like a call to panic. The process continues up the stack until all functions in the current goroutine have returned, at which point the program crashes. Panics can be initiated by invoking panic directly. They can also be caused by runtime errors, such as out-of-bounds array accesses.</li>
+<li>Recover is a built-in function that regains control of a panicking goroutine. Recover is only useful inside deferred functions. During normal execution, a call to recover will return nil and have no other effect. If the current goroutine is panicking, a call to recover will capture the value given to panic and resume normal execution.
+<a href="https://blog.golang.org/defer-panic-and-recover">https://blog.golang.org/defer-panic-and-recover</a></li>
+<li>Go has pointers. A pointer holds the memory address of a variable.
+Unlike C, Go has no pointer arithmetic.</li>
+<li>A struct is a collection of fields.
+Struct fields are accessed using a dot.</li>
+<li>A struct literal denotes a newly allocated struct value by listing the values of its fields.
+You can list just a subset of fields by using the Name: syntax. (And the order of named fields is irrelevant.)
+The special prefix &amp; returns a pointer to the struct value.</li>
+<li>An array&rsquo;s length is part of its type, so arrays cannot be resized. This seems limiting, but don&rsquo;t worry; Go provides a convenient way of working with arrays.</li>
+<li>A slice points to an array of values and also includes a length.
+[]T is a slice with elements of type T.
+len(s) returns the length of slice s.</li>
+</ol>
+<ul>
+<li>Slices can contain any type, including other slices.</li>
+<li>Slices can be re-sliced, creating a new slice value that points to the same array.</li>
+<li>Slices are created with the make function. It works by allocating a zeroed array and returning a slice that refers to that array:</li>
+<li>The zero value of a slice is nil. A nil slice has a length and capacity of 0.</li>
+<li>It is common to append new elements to a slice, and so Go provides a built-in append function. The documentation of the built-in package describes append.
+<a href="https://blog.golang.org/go-slices-usage-and-internals">https://blog.golang.org/go-slices-usage-and-internals</a></li>
+</ul>
+<ol start="25">
+<li>The range form of the for loop iterates over a slice or map.
+When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.</li>
+</ol>
+<ul>
+<li>You can skip the index or value by assigning to _.
+If you only want the index, drop the &ldquo;, value&rdquo; entirely.</li>
+</ul>
+<ol start="26">
+<li>A map maps keys to values.
+Maps must be created with make before use; the nil map is empty and cannot be assigned to.</li>
+</ol>
+<ul>
+<li>Map literals are like struct literals, but the keys are required.</li>
+<li>If the top-level type is just a type name, you can omit it from the elements of the literal.
+Insert or update an element in map m:
+m[key] = elem
+Retrieve an element:
+elem = m[key]
+Delete an element:
+delete(m, key)
+Test that a key is present with a two-value assignment:
+elem, ok = m[key]
+If key is in m, ok is true. If not, ok is false.
+If key is not in the map, then elem is the zero value for the map&rsquo;s element type.
+Note: if elem or ok have not yet been declared you could use a short declaration form:
+elem, ok := m[key]</li>
+</ul>
+<ol start="27">
+<li>Functions are values too. They can be passed around just like other values.
+Function values may be used as function arguments and return values.</li>
+<li>Go functions may be closures. A closure is a function value that references variables from outside its body. The function may access and assign to the referenced variables; in this sense the function is &ldquo;bound&rdquo; to the variables.
+For example, the adder function returns a closure. Each closure is bound to its own sum variable.</li>
+<li>Go does not have classes. However, you can define methods on types.
+A method is a function with a special receiver argument.
+The receiver appears in its own argument list between the func keyword and the method name.</li>
+</ol>
+<ul>
+<li>Remember: a method is just a function with a receiver argument.</li>
+<li>You can declare a method on non-struct types, too.</li>
+<li>You can only declare a method with a receiver whose type is defined in the same package as the method. You cannot declare a method with a receiver whose type is defined in another package (which includes the built-in types such as int).</li>
+</ul>
+<ol start="30">
+<li>You can declare methods with pointer receivers.
+This means the receiver type has the literal syntax *T for some type T. (Also, T cannot itself be a pointer such as *int.)
+Methods with pointer receivers can modify the value to which the receiver points (as Scale does here). Since methods often need to modify their receiver, pointer receivers are more common than value receivers.</li>
+<li>There are two reasons to use a pointer receiver.
+The first is so that the method can modify the value that its receiver points to.
+The second is to avoid copying the value on each method call. This can be more efficient if the receiver is a large struct, for example.</li>
+<li>An interface type is defined as a set of method signatures.
+A value of interface type can hold any value that implements those methods.</li>
+<li>A type implements an interface by implementing its methods. There is no explicit declaration of intent, no &ldquo;implements&rdquo; keyword.
+Implicit interfaces decouple the definition of an interface from its implementation, which could then appear in any package without prearrangement.</li>
+<li>Under the covers, interface values can be thought of as a tuple of a value and a concrete type:
+(value, type)
+An interface value holds a value of a specific underlying concrete type.
+Calling a method on an interface value executes the method of the same name on its underlying type.</li>
+<li>If the concrete value inside the interface itself is nil, the method will be called with a nil receiver.
+In some languages this would trigger a null pointer exception, but in Go it is common to write methods that gracefully handle being called with a nil receiver (as with the method M in this example.)
+Note that an interface value that holds a nil concrete value is itself non-nil.</li>
+<li>A nil interface value holds neither value nor concrete type.
+Calling a method on a nil interface is a run-time error because there is no type inside the interface tuple to indicate which concrete method to call.</li>
+<li>The interface type that specifies zero methods is known as the empty interface:
+interface{}
+An empty interface may hold values of any type. (Every type implements at least zero methods.)
+Empty interfaces are used by code that handles values of unknown type. For example, fmt.Print takes any number of arguments of type interface{}.</li>
+<li>A type assertion provides access to an interface value&rsquo;s underlying concrete value.
+t := i.(T)
+This statement asserts that the interface value i holds the concrete type T and assigns the underlying T value to the variable t.
+If i does not hold a T, the statement will trigger a panic.
+To test whether an interface value holds a specific type, a type assertion can return two values: the underlying value and a boolean value that reports whether the assertion succeeded.
+t, ok := i.(T)
+If i holds a T, then t will be the underlying value and ok will be true.
+If not, ok will be false and t will be the zero value of type T, and no panic occurs.
+Note the similarity between this syntax and that of reading from a map.</li>
+<li>A type switch is a construct that permits several type assertions in series.
+A type switch is like a regular switch statement, but the cases in a type switch specify types (not values), and those values are compared against the type of the value held by the given interface value.</li>
+</ol>
+<pre><code>
+switch v := i.(type) {
+case T:
+    // here v has type T
+case S:
+    // here v has type S
+default:
+    // no match; here v has the same type as i
+}
+</code></pre>
+<p>The declaration in a type switch has the same syntax as a type assertion i.(T), but the specific type T is replaced with the keyword type.
+This switch statement tests whether the interface value i holds a value of type T or S. In each of the T and S cases, the variable v will be of type T or S respectively and hold the value held by i. In the default case (where there is no match), the variable v is of the same interface type and value as i.
+40. One of the most ubiquitous interfaces is Stringer defined by the fmt package.
+type Stringer interface {
+String() string
+}
+A Stringer is a type that can describe itself as a string. The fmt package (and many others) look for this interface to print values.
+41. Go programs express error state with error values.
+The error type is a built-in interface similar to fmt.Stringer:</p>
+<pre><code>
+type error interface {
+    Error() string
+}
+</code></pre>
+<p>(As with fmt.Stringer, the fmt package looks for the error interface when printing values.)
+Functions often return an error value, and calling code should handle errors by testing whether the error equals nil.</p>
+<pre><code>
+i, err := strconv.Atoi("42")
+if err != nil {
+    fmt.Printf("couldn't convert number: %v\n", err)
+    return
+}
+fmt.Println("Converted integer:", i)
+</code></pre>
+<p>A nil error denotes success; a non-nil error denotes failure.
+42. A goroutine is a lightweight thread managed by the Go runtime.
+43. Channels are a typed conduit through which you can send and receive values with the channel operator, &lt;-.
+ch &lt;- v    // Send v to channel ch.
+v := &lt;-ch  // Receive from ch, and
+// assign value to v.(The data flows in the direction of the arrow.)
+Like maps and slices, channels must be created before use:
+ch := make(chan int)
+By default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables.
+44. Channels can be buffered. Provide the buffer length as the second argument to make to initialize a buffered channel:
+ch := make(chan int, 100)
+Sends to a buffered channel block only when the buffer is full. Receives block when the buffer is empty.
+45. A sender can close a channel to indicate that no more values will be sent. Receivers can test whether a channel has been closed by assigning a second parameter to the receive expression: after
+v, ok := &lt;-ch
+ok is false if there are no more values to receive and the channel is closed.
+The loop for i := range c receives values from the channel repeatedly until it is closed.
+Note: Only the sender should close a channel, never the receiver. Sending on a closed channel will cause a panic.
+Another note: Channels aren&rsquo;t like files; you don&rsquo;t usually need to close them. Closing is only necessary when the receiver must be told there are no more values coming, such as to terminate a range loop.
+46. The select statement lets a goroutine wait on multiple communication operations.
+A select blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready.
+47. The default case in a select is run if no other case is ready.
+Use a default case to try a send or receive without blocking:</p>
+<pre><code>
+select {
+case i := <-c:
+    // use i
+default:
+    // receiving from c would block
+}
+</code></pre>
+<ol start="48">
+<li>We&rsquo;ve seen how channels are great for communication among goroutines.
+But what if we don&rsquo;t need communication? What if we just want to make sure only one goroutine can access a variable at a time to avoid conflicts?
+This concept is called mutual exclusion, and the conventional name for the data structure that provides it is mutex.
+Go&rsquo;s standard library provides mutual exclusion with sync.Mutex and its two methods:
+Lock
+Unlock
+We can define a block of code to be executed in mutual exclusion by surrounding it with a call to Lock and Unlock as shown on the Inc method.
+We can also use defer to ensure the mutex will be unlocked as in the Value method.</li>
+<li></li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="常见问题及解答">
+        常见问题及解答
+        <a data-clipboard-text="http://woody010.github.io/01-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Golang/#常见问题及解答" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 常见问题及解答" href="#%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e5%8f%8a%e8%a7%a3%e7%ad%94">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><ol>
+<li>Q: import package时，包的前面用下划线的作用？</li>
+</ol>
+<pre><code>
+import (
+    "database/sql"
+    "fmt"
+    _ "github.com/go-sql-driver/mysql"
+)
+</code></pre>
+<p>A: 执行包的初始化。</p>
+<ol start="2">
+<li>Go的变量声明为什么把类型放在变量名之后？
+<a href="https://blog.golang.org/gos-declaration-syntax">https://blog.golang.org/gos-declaration-syntax</a></li>
+</ol>
 
 
     </article>

@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,18 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="Busybox    make menuconfig make
+1.22.1    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.22.1 Cross Compiler gcc 4.4.3
+1.2.0 for QQ2440    Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.2.0
+Cross Compiler arm-linux-gnueabi-gcc 4.7 arm-linux-gcc 3.4.1
+mknod ./dev/console c 5 1 mknod ./dev/null c 1 3
+can&rsquo;t open /dev/tty3: No such file or directory can&rsquo;t open /dev/tty2: No such file or directory can&rsquo;t open /dev/tty4: No such file or directory
+解决办法：
+ln -sf .">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>Busybox | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +42,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -517,7 +522,7 @@
             
             
                 <span class="flex">
-                    <a href="/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/" class="gdoc-nav__entry ">
+                    <a href="/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/" class="gdoc-nav__entry is-active">
                         Busybox
                     </a>
                 </span>
@@ -891,7 +896,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/' href='/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/'><span itemprop='name'>07 嵌入式</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Busybox</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,16 +921,48 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>Busybox</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h1 id="busybox">
+        Busybox
+        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/#busybox" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Busybox" href="#busybox">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h1>
-</div><img src="images/1.jpeg">
+</div><p>make menuconfig
+make</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="1221">
+        1.22.1
+        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/#1221" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1.22.1" href="#1221">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.22.1
+Cross Compiler
+gcc 4.4.3</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="120-for-qq2440">
+        1.2.0 for QQ2440
+        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Busybox/#120-for-qq2440" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 1.2.0 for QQ2440" href="#120-for-qq2440">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>Working Dir: /mnt/hgfs/Woody/Desktop/LHQ/18_MyCode/2440/busybox-1.2.0</p>
+<p>Cross Compiler
+arm-linux-gnueabi-gcc 4.7
+arm-linux-gcc 3.4.1</p>
+<p>mknod ./dev/console c 5 1
+mknod ./dev/null c 1 3</p>
+<p>can&rsquo;t open /dev/tty3: No such file or directory
+can&rsquo;t open /dev/tty2: No such file or directory
+can&rsquo;t open /dev/tty4: No such file or directory</p>
+<p>解决办法：</p>
+<p>ln -sf ./dev/null ./dev/tty2
+ln -sf ./dev/null ./dev/tty3
+ln -sf ./dev/null ./dev/tty4</p>
 
 
     </article>

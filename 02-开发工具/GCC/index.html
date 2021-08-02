@@ -2,7 +2,6 @@
 <html lang="cn" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.84.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,18 @@
 
 
 
-    <meta name="description" content="我的笔记    ">
+    <meta name="description" content="GCC    编译选项     -c 预处理、编译和汇编源文件，但不链接 -S 编译后即停止，不汇编 -E 预处理后即停止 -Wall 显示所有警告 -g 加入调试信息 -O 优化选项，有多个-O时最后一个生效  连接器选项      -lmylib 寻找libmylib.a库文件
+  -nostartfiles 不链接系统启动文件，在编译bootloader、kernel时有用
+  -nostdlib 不链接系统启动文件和标准库文件
+  -static 生成静态文件，不使用共享库
+  -shared 生成共享库文件
+  -T 指定代码段、数据段、bss段的起始地址，也可以用来指定一个链接脚本
+   如何查看编译器预定义的符号 touch a.h gcc -E -dM a.h
+  编译错误    ">
 
 
 
-    <title>Woody&#39;s Notes</title>
+    <title>GCC | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +42,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -313,7 +318,7 @@
             
             
                 <span class="flex">
-                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/" class="gdoc-nav__entry ">
+                    <a href="/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/" class="gdoc-nav__entry is-active">
                         GCC
                     </a>
                 </span>
@@ -891,7 +896,23 @@
             
     
     
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'></span><meta itemprop='position' content='1' /></li>
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/' href='/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/'><span itemprop='name'>02 开发工具</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>GCC</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
     
 
         </ol>
@@ -900,17 +921,72 @@
     
 </div>
 
+
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1></h1>
+        <h1>GCC</h1>
         <div class="gdoc-page__anchorwrap">
-    <h1 id="我的笔记">
-        我的笔记
-        <a data-clipboard-text="http://woody010.github.io/#我的笔记" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 我的笔记" href="#%e6%88%91%e7%9a%84%e7%ac%94%e8%ae%b0">
+    <h3 id="gcc">
+        GCC
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/#gcc" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor GCC" href="#gcc">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
-    </h1>
-</div><img src="images/1.jpeg">
-
+    </h3>
+</div><div class="gdoc-page__anchorwrap">
+    <h3 id="编译选项">
+        编译选项
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/#编译选项" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 编译选项" href="#%e7%bc%96%e8%af%91%e9%80%89%e9%a1%b9">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><ol>
+<li>-c 预处理、编译和汇编源文件，但不链接</li>
+<li>-S 编译后即停止，不汇编</li>
+<li>-E 预处理后即停止</li>
+<li>-Wall 显示所有警告</li>
+<li>-g 加入调试信息</li>
+<li>-O 优化选项，有多个-O时最后一个生效</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="连接器选项">
+        连接器选项
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/#连接器选项" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 连接器选项" href="#%e8%bf%9e%e6%8e%a5%e5%99%a8%e9%80%89%e9%a1%b9">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><ol>
+<li>
+<p>-lmylib 寻找libmylib.a库文件</p>
+</li>
+<li>
+<p>-nostartfiles 不链接系统启动文件，在编译bootloader、kernel时有用</p>
+</li>
+<li>
+<p>-nostdlib 不链接系统启动文件和标准库文件</p>
+</li>
+<li>
+<p>-static 生成静态文件，不使用共享库</p>
+</li>
+<li>
+<p>-shared 生成共享库文件</p>
+</li>
+<li>
+<p>-T 指定代码段、数据段、bss段的起始地址，也可以用来指定一个链接脚本</p>
+</li>
+<li></li>
+<li>
+<p>如何查看编译器预定义的符号
+touch a.h
+gcc -E -dM a.h</p>
+</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="编译错误">
+        编译错误
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/#编译错误" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 编译错误" href="#%e7%bc%96%e8%af%91%e9%94%99%e8%af%af">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
 
     </article>
 
