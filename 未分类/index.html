@@ -10,24 +10,11 @@
 
 
 
-    <meta name="description" content="工作目录：Ubuntu64虚拟机 /home/woody/LHQ/src/openwrt/openwrt.git.19.07     开启FPU Emulator
-go hardfloat
-go softfloat
-helloclang /lib/ld-musl-mips.so.1 helloclang_static
-hellorust /lib/ld-musl-mips.so.1
-不开启FPU Emulator go hardfloat Illegal instruction
-go softfloat
-helloclang /lib/ld-musl-mips.so.1 helloclang_static
-hellorust /lib/ld-musl-mips.so.1 hellorust_satic
- 工作目录：Ubuntu32虚拟机 /home/woody/LHQ/src/openwrt.git     硬件改造：    http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd http://www.rs-online.com/designspark/electronics/blog/hacking-the-tp-link-tl-wr703n 打开jtag http://www.devttys0.com/2014/02/re-enabling-jtag-and-debugging-the-wrt120n/ 不标准jtag http://wiki.openwrt.org/toh/tp-link/tl-wr841nd
-jtag: http://wiki.openwrt.org/doc/hardware/port.jtag
-在电路设计时，JTAG口的TCK要加3.3V上拉。上拉电阻值取4.7K。另外，要考虑到在成品阶段(此时已不需要通过JTAG编程)，将TCK.TMS.TDI引脚接地，这样更能提高系统的抗干扰能力，对于提高系统的稳定性是非常主要的。
- WR1041N 硬件信息    W1 wlan C0:61:18:3C:35:96 br-lan C0:61:18:3C:35:97
-W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmware">
+    <meta name="description" content="Woody&#39;s Notes">
 
 
 
-    <title>Openwrt | Woody&#39;s Notes</title>
+    <title>未分类 | Woody&#39;s Notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -48,6 +35,7 @@ W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmwar
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
+<link rel="alternate" type="application/rss+xml" href="http://woody010.github.io/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" title="Woody's Notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -552,7 +540,7 @@ W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmwar
             
             
                 <span class="flex">
-                    <a href="/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/" class="gdoc-nav__entry is-active">
+                    <a href="/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/" class="gdoc-nav__entry ">
                         Openwrt
                     </a>
                 </span>
@@ -986,15 +974,7 @@ W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmwar
         
     
     
-        
-        
-        
-        
-    
-    
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/' href='/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/'><span itemprop='name'>07 嵌入式</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Openwrt</span><meta itemprop='position' content='3' /></li>
-    
-
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'></span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>未分类</span><meta itemprop='position' content='2' /></li>
     
 
     
@@ -1005,356 +985,9 @@ W2 EC:17:2F:46:70:E6 EC:17:2F:46:70:E7    定制目标 Features      16M Firmwar
     
 </div>
 
-
     <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Openwrt</h1>
-        <div class="gdoc-page__anchorwrap">
-    <h3 id="工作目录ubuntu64虚拟机---homewoodylhqsrcopenwrtopenwrtgit1907">
-        工作目录：Ubuntu64虚拟机   /home/woody/LHQ/src/openwrt/openwrt.git.19.07
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#工作目录ubuntu64虚拟机---homewoodylhqsrcopenwrtopenwrtgit1907" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 工作目录：Ubuntu64虚拟机   /home/woody/LHQ/src/openwrt/openwrt.git.19.07" href="#%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95ubuntu64%e8%99%9a%e6%8b%9f%e6%9c%ba---homewoodylhqsrcopenwrtopenwrtgit1907">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><hr>
-<p>开启FPU Emulator</p>
-<p>go hardfloat</p>
-<p>go softfloat</p>
-<p>helloclang /lib/ld-musl-mips.so.1
-helloclang_static</p>
-<p>hellorust /lib/ld-musl-mips.so.1</p>
-<p>不开启FPU Emulator
-go hardfloat Illegal instruction</p>
-<p>go softfloat</p>
-<p>helloclang /lib/ld-musl-mips.so.1
-helloclang_static</p>
-<p>hellorust /lib/ld-musl-mips.so.1
-hellorust_satic</p>
-<hr>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="工作目录ubuntu32虚拟机---homewoodylhqsrcopenwrtgit">
-        工作目录：Ubuntu32虚拟机   /home/woody/LHQ/src/openwrt.git
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#工作目录ubuntu32虚拟机---homewoodylhqsrcopenwrtgit" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 工作目录：Ubuntu32虚拟机   /home/woody/LHQ/src/openwrt.git" href="#%e5%b7%a5%e4%bd%9c%e7%9b%ae%e5%bd%95ubuntu32%e8%99%9a%e6%8b%9f%e6%9c%ba---homewoodylhqsrcopenwrtgit">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><hr>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="硬件改造">
-        硬件改造：
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#硬件改造" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 硬件改造：" href="#%e7%a1%ac%e4%bb%b6%e6%94%b9%e9%80%a0">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><p><a href="http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd">http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd</a>
-<a href="http://www.rs-online.com/designspark/electronics/blog/hacking-the-tp-link-tl-wr703n">http://www.rs-online.com/designspark/electronics/blog/hacking-the-tp-link-tl-wr703n</a>
-打开jtag <a href="http://www.devttys0.com/2014/02/re-enabling-jtag-and-debugging-the-wrt120n/">http://www.devttys0.com/2014/02/re-enabling-jtag-and-debugging-the-wrt120n/</a>
-不标准jtag <a href="http://wiki.openwrt.org/toh/tp-link/tl-wr841nd">http://wiki.openwrt.org/toh/tp-link/tl-wr841nd</a></p>
-<p>jtag: <a href="http://wiki.openwrt.org/doc/hardware/port.jtag">http://wiki.openwrt.org/doc/hardware/port.jtag</a></p>
-<p>在电路设计时，JTAG口的TCK要加3.3V上拉。上拉电阻值取4.7K。另外，要考虑到在成品阶段(此时已不需要通过JTAG编程)，将TCK.TMS.TDI引脚接地，这样更能提高系统的抗干扰能力，对于提高系统的稳定性是非常主要的。</p>
-<hr>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="wr1041n-硬件信息">
-        WR1041N 硬件信息
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#wr1041n-硬件信息" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor WR1041N 硬件信息" href="#wr1041n-%e7%a1%ac%e4%bb%b6%e4%bf%a1%e6%81%af">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><p>W1
-wlan C0:61:18:3C:35:96
-br-lan C0:61:18:3C:35:97</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="ec172f4670e7">
-        W2
-EC:17:2F:46:70:E6
-EC:17:2F:46:70:E7
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#ec172f4670e7" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor W2
-EC:17:2F:46:70:E6
-EC:17:2F:46:70:E7" href="#ec172f4670e7">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div><div class="gdoc-page__anchorwrap">
-    <h3 id="定制目标-features">
-        定制目标 Features
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#定制目标-features" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 定制目标 Features" href="#%e5%ae%9a%e5%88%b6%e7%9b%ae%e6%a0%87-features">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><ul>
-<li>
-<p>16M Firmware</p>
-</li>
-<li>
-<p>mtd writeable</p>
-</li>
-<li>
-<p>Hacked
-USB support
-ext4, vfat, ntfs-3g filesystem support
-cp936</p>
-</li>
-<li>
-<p>Modules
-luci</p>
-</li>
-</ul>
-<p>Samba
-Minidlna
-tftp</p>
-<p>Rsync
-Transmission
-GoAgent</p>
-<p>Wifidog
-nodogsplash</p>
-<p>utils
-hdparm
-fdisk
-git</p>
-<hr>
-<div class="gdoc-page__anchorwrap">
-    <h1 id="操作步骤">
-        操作步骤
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#操作步骤" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 操作步骤" href="#%e6%93%8d%e4%bd%9c%e6%ad%a5%e9%aa%a4">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h1>
-</div><ol>
-<li>OpenWrt source repository downloads</li>
-</ol>
-<p>GIT</p>
-<p>The recommended way of checking out the OpenWrt source code is cloning the Git repository using one of the following commands:</p>
-<p>trunk (main development tree)</p>
-<ul>
-<li>Main repository</li>
-</ul>
-<p>git clone git://git.openwrt.org/openwrt.git</p>
-<p>12.09 branch (Attitude Adjustment)</p>
-<ul>
-<li>Main repository</li>
-</ul>
-<p>git clone git://git.openwrt.org/12.09/openwrt.git</p>
-<ul>
-<li>Packages feed</li>
-</ul>
-<p>git clone git://git.openwrt.org/12.09/packages.git</p>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="持续更新">
-        持续更新
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#持续更新" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 持续更新" href="#%e6%8c%81%e7%bb%ad%e6%9b%b4%e6%96%b0">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><p>On branch 16m:
-git stash
-git checkout master
-git pull
-git checkout 16m
-git merge master
-git stash pop</p>
-<ol start="2">
-<li>
-<p>Compile OpenWrt
-./scripts/feeds update -a
-./scripts/feeds install -a
-make menuconfig
-make V=s</p>
-<p>Compile packages
-make package/xxx/compile</p>
-</li>
-<li>
-<p>Install OpenWrt into box
-sysupgrade -n openwrt.bin</p>
-</li>
-<li>
-<p>First login
-telnet 192.168.1.1
-passwd</p>
-</li>
-<li>
-<p>Basic Configuration
-/etc/config/network
-config interface &lsquo;lan&rsquo;
-option ifname &lsquo;eth0.1&rsquo;
-option force_link &lsquo;1&rsquo;
-option type &lsquo;bridge&rsquo;
-option proto &lsquo;static&rsquo;
-option ipaddr &lsquo;10.0.0.1&rsquo;
-option netmask &lsquo;255.255.255.0&rsquo;
-option ip6assign &lsquo;60&rsquo;</p>
-</li>
-</ol>
-<p>config interface &lsquo;wwan&rsquo;
-option proto &lsquo;dhcp&rsquo;</p>
-<p>/etc/config/wireless
-config wifi-device  radio0
-option type     mac80211
-option channel  11
-option hwmode   11g
-option path     &lsquo;platform/ar934x_wmac&rsquo;
-option htmode   HT20
-# REMOVE THIS LINE TO ENABLE WIFI:
-option disabled 0
-option country &lsquo;CN&rsquo;</p>
-<p>config wifi-iface
-option device   radio0
-option network  wwan
-option mode     sta
-option ssid     &lsquo;TP-LINK_2C94F0&rsquo;
-option bssid    &lsquo;E0:05:C5:2C:94:F0&rsquo;
-option encryption &lsquo;psk2&rsquo;
-option key      &lsquo;88888086&rsquo;</p>
-<p>config wifi-iface
-option device   radio0
-option network  lan
-option mode     ap
-option ssid     OpenWrt
-option encryption none</p>
-<p>/etc/config/firewall
-config zone
-option name             wan
-list   network          &lsquo;wan&rsquo;
-list   network          &lsquo;wan6&rsquo;
-list   network          &lsquo;wwan&rsquo;
-option input            REJECT
-option output           ACCEPT
-option forward          REJECT
-option masq             1
-option mtu_fix          1</p>
-<ol start="6">
-<li>
-<p>Install Packages
-opkg update
-opkg install xxxx.ipk</p>
-</li>
-<li>
-<p>Install wifidog
-/etc/wifidog.conf</p>
-</li>
-</ol>
-<p>AuthServer {
-Hostname p1.com
-Path /
-}</p>
-<p>Running Wifidog for the first time</p>
-<p>Run Wifidog with the following switches:</p>
-<p>wifidog -f -d 7
--f means to run in foreground (do not become a background daemon)
--d 7 increases debug output level to the maximum</p>
-<p>??? wifidog不能自动启动的问题：延迟10s再启动  sleep 10</p>
-<ol start="15">
-<li>
-<p>修改固件包的默认配置
-./package/base-files/files</p>
-<p>/etc/config/wireless
-/etc/banner</p>
-<p>/package/network/services/samba36/files/smb.conf.template</p>
-</li>
-<li>
-<p>增加自己的文件到固件包
-./package/base-files/files
-/app/goagent/local
-/backup/config.tar.gz</p>
-</li>
-<li>
-<p>支持cp936
-修改  ./package/kernel/linux/modules/nls.mk
-内核  make kernel_menuconfig</p>
-</li>
-<li>
-<p>usb支持</p>
-</li>
-</ol>
-<p>./target/linux/ar71xx/files/arch/mips/ath79/mach-tl-wr1041n-v2.c
-增加以下内容
-include &ldquo;dev-usb.h&rdquo;</p>
-<p>static void __init tl_wr1041nv2_setup(void)
-{
-u8 *mac = (u8 *) KSEG1ADDR(0x1f01fc00);
-u8 *ee = (u8 *) KSEG1ADDR(0x1fff1000);</p>
-<pre><code>    ath79_register_usb();
-    ath79_register_m25p80(&amp;tl_wr1041nv2_flash_data);
-</code></pre>
-<p>auto mount : /etc/config/fstab anno_mount</p>
-<p>make menuconfig
-base system -&gt; block-mount
-kernel modules -&gt; block devices -&gt; kmod-scsi-
--&gt; filesystems -&gt;
--&gt; Native Language Support -&gt; cp437, iso8859-1, utf8
--&gt; USB Support -&gt;</p>
-<ol start="19">
-<li>安装GoAgent</li>
-</ol>
-<p>安装依赖的软件包</p>
-<ul>
-<li>
-<p>opkg install libopenssl</p>
-</li>
-<li>
-<p>opkg install python</p>
-</li>
-<li>
-<p>opkg install pyopenssl python-openssl</p>
-</li>
-</ul>
-<p>下载goagent并将local目录上传到openwrt</p>
-<ol start="20">
-<li>Flash由4M变成8M（或16M）</li>
-</ol>
-<p>//———— Ignored Start
-./tools/firmware-utils/src/mktplinkfw.c
-@@ -362,7 +362,7 @@ static struct board_info boards[] = {
-.id             = &ldquo;TL-WR1041Nv2&rdquo;,
-.hw_id          = HWID_TL_WR1041N_V2,
-.hw_rev         = 1,</p>
-<ul>
-<li>
-<pre><code>          .layout_id      = &quot;4Mlzma&quot;,
-</code></pre>
-</li>
-</ul>
-<ul>
-<li>
-<pre><code>          .layout_id      = &quot;16Mlzma&quot;,
-  }
-</code></pre>
-</li>
-</ul>
-<p>// ——— Ignored End</p>
-<p>./target/linux/ar71xx/image/Makefile
-define Device/tl-wr1041n-v2
-$(Device/tplink-16mlzma)
-BOARDNAME := TL-WR1041N-v2
-DEVICE_PROFILE := TLWR1041
-TPLINK_HWID := 0x10410002
-endef</p>
-<p>否则出现如下错误:
-[mktplinkfw] kernel length aligned to 914864
-[mktplinkfw] *** error: images are too big
-make[3]: [install] Error 255 (ignored)</p>
-<p>在openwrt中不能更新uboot时，需要做如下修改：
-./target/linux/ar71xx/files/drivers/mtd/tplinkpart.c
-parts[0].mask_flags = MTD_WRITEABLE; //去除本行</p>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="qa">
-        Q&amp;A
-        <a data-clipboard-text="http://woody010.github.io/07-%E5%B5%8C%E5%85%A5%E5%BC%8F/Openwrt/#qa" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Q&amp;A" href="#qa">
-            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div><ul>
-<li>
-<p>编译ushare的依赖库libdlna时找不到libavformat？先编译ffmpeg
-no format arguments [-Werror=format-security]  PKG_CHECK_FORMAT_SECURITY:=0</p>
-</li>
-<li>
-<p>如何默认打开无线？修改 ./package/kernel/mac80211/files/lib/wifi/mac80211.sh</p>
-</li>
-<li>
-<p>warning: inline function &lsquo;start_log&rsquo; declared but never defined
--fgnu89-inline</p>
-</li>
-</ul>
-
+        <h1>未分类</h1>
+        
 
     </article>
 
