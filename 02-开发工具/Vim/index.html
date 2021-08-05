@@ -10,8 +10,17 @@
 
 
 
-    <meta name="description" content="Vim    ^ 行首 $ 行尾 0 第一个字符
-gg 文件头 G 文件尾">
+    <meta name="description" content="Vim快捷键    移动光标    ^ 行首
+$ 行尾
+0 第一个字符
+gg 文件头
+G 文件尾
+w 移动一个单词
+插件管理和安装    插件管理工具Vundle    安装插件
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 参考Vundle文档
+常用的插件    ~/.vimrc
+Plugin &#39;tpope/vim-fugitive&#39; Plugin &#39;tpope/vim-sensible&#39; Plugin &#39;fatih/vim-go&#39; Plugin &#39;preservim/nerdtree&#39; Plugin &#39;airblade/vim-gitgutter&#39; Plugin &#39;altercation/vim-colors-solarized&#39; Plugin &#39;godlygeek/tabular&#39; Plugin &#39;plasticboy/vim-markdown&#39; Plugin &#39;pangloss/vim-javascript&#39; 自动增加文件头
+autocmd BufNewFile *.go exec &quot;:call AddTitleForGolang()&quot; function AddTitleForGolang() call append(0,&quot;/**&quot;) call append(1,&quot; * @Author : Woody(28048038@qq.">
 
 
 
@@ -839,6 +848,30 @@ gg 文件头 G 文件尾">
             </li>
             
             
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/" class="gdoc-nav__entry ">
+                        初中数学
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
         
     </ul>
 
@@ -919,18 +952,104 @@ gg 文件头 G 文件尾">
     <article class="gdoc-markdown gdoc-markdown__align--left">
         <h1>Vim</h1>
         <div class="gdoc-page__anchorwrap">
-    <h3 id="vim">
-        Vim
-        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#vim" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Vim" href="#vim">
+    <h2 id="vim快捷键">
+        Vim快捷键
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#vim快捷键" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Vim快捷键" href="#vim%e5%bf%ab%e6%8d%b7%e9%94%ae">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><div class="gdoc-page__anchorwrap">
+    <h3 id="移动光标">
+        移动光标
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#移动光标" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 移动光标" href="#%e7%a7%bb%e5%8a%a8%e5%85%89%e6%a0%87">
             <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h3>
-</div><p>^     行首
-$     行尾
-0     第一个字符</p>
-<p>gg    文件头
-G     文件尾</p>
+</div><p>^ 行首</p>
+<p>$ 行尾</p>
+<p>0 第一个字符</p>
+<p>gg 文件头</p>
+<p>G 文件尾</p>
+<p>w 移动一个单词</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="插件管理和安装">
+        插件管理和安装
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#插件管理和安装" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 插件管理和安装" href="#%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86%e5%92%8c%e5%ae%89%e8%a3%85">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>插件管理工具<div class="gdoc-page__anchorwrap">
+    <h3 id="插件管理工具vundlehttpsgithubcomvundlevimvundlevim">
+        <a class="gdoc-markdown__link" href="https://github.com/VundleVim/Vundle.vim">Vundle</a>
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#插件管理工具vundlehttpsgithubcomvundlevimvundlevim" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Vundle" href="#%e6%8f%92%e4%bb%b6%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7vundlehttpsgithubcomvundlevimvundlevim">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>安装插件</p>
+<pre><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+</code></pre><p>参考Vundle文档</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="常用的插件">
+        常用的插件
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#常用的插件" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 常用的插件" href="#%e5%b8%b8%e7%94%a8%e7%9a%84%e6%8f%92%e4%bb%b6">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><p>~/.vimrc</p>
+<pre><code>Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
+Plugin 'fatih/vim-go'
+Plugin 'preservim/nerdtree'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+Plugin 'pangloss/vim-javascript'
+</code></pre><p>自动增加文件头</p>
+<pre><code>autocmd BufNewFile *.go exec &quot;:call AddTitleForGolang()&quot;
+function AddTitleForGolang()
+    call append(0,&quot;/**&quot;)
+    call append(1,&quot; * @Author     : Woody(28048038@qq.com)&quot;)
+    call append(2,&quot; * @Date       : &quot;.strftime(&quot;%Y-%m-%d&quot;))
+    call append(3,&quot; * @Description:&quot;)
+    call append(4,&quot; */&quot;)
+endfunction
+
+autocmd BufNewFile *.c exec &quot;:call AddTitleForC()&quot;
+function AddTitleForC()
+    call append(0,&quot;/**&quot;)
+    call append(1,&quot; * @Author     : Woody(28048038@qq.com)&quot;)
+    call append(2,&quot; * @Date       : &quot;.strftime(&quot;%Y-%m-%d&quot;))
+    call append(3,&quot; * @Description:&quot;)
+    call append(4,&quot; */&quot;)
+endfunction
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h3 id="根据不同的文件类型设置键盘映射">
+        根据不同的文件类型设置键盘映射
+        <a data-clipboard-text="http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/#根据不同的文件类型设置键盘映射" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor 根据不同的文件类型设置键盘映射" href="#%e6%a0%b9%e6%8d%ae%e4%b8%8d%e5%90%8c%e7%9a%84%e6%96%87%e4%bb%b6%e7%b1%bb%e5%9e%8b%e8%ae%be%e7%bd%ae%e9%94%ae%e7%9b%98%e6%98%a0%e5%b0%84">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div><pre><code>cd ~/.vim
+mkdir -p after/ftplugin
+touch go.vim
+</code></pre><p>go.vim</p>
+<pre><code>map &lt;F5&gt; &lt;Esc&gt;:GoRun&lt;CR&gt;
+
+map &lt;F6&gt; &lt;Esc&gt;:GoReferrers&lt;CR&gt;
+map! &lt;F6&gt; &lt;Esc&gt;:GoGoReferrers&lt;CR&gt;
+map &lt;F7&gt; &lt;Esc&gt;:call AddTitleForGolang()&lt;CR&gt;
+map! &lt;F7&gt; &lt;Esc&gt;:call AddTitleForGolang()&lt;CR&gt;
+map &lt;F8&gt; &lt;Esc&gt;:GoFmt&lt;CR&gt;
+map! &lt;F8&gt; &lt;Esc&gt;:GoFmt&lt;CR&gt;
+
+map &lt;F11&gt; &lt;Esc&gt;:GoDef&lt;CR&gt;
+map! &lt;F11&gt; &lt;Esc&gt;:GoDef&lt;CR&gt;
+map &lt;F12&gt; &lt;Esc&gt;:GoDoc&lt;CR&gt;
+map! &lt;F12&gt; &lt;Esc&gt;:GoDoc&lt;CR&gt;
+</code></pre>
 
     </article>
 

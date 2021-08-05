@@ -179,6 +179,16 @@ http://www.openculture.com/ http://successfulenglish.com/
     </item>
     
     <item>
+      <title></title>
+      <link>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/</guid>
+      <description>KaTeX       \[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]  KaTeX can also be used inline, for example \(\pi(x)\)  or used with a display setting. for example display: block:
+\[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]  二次函数一般式： \[y=ax^2&amp;#43;bx&amp;#43;c\ \ (a\not=0)\]    sequenceDiagram Alice-Bob: Hello Bob, how are you? alt is sick Bob-Alice: Not so good :( else is well Bob-Alice: Feeling fresh like a daisy end opt Extra response Bob-Alice: Thanks for asking end  </description>
+    </item>
+    
+    <item>
       <title>GCC</title>
       <link>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/GCC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -232,7 +242,7 @@ xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/AHD_iPhone_3.5.
       <guid>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/MacOSX/</guid>
       <description>mysqld    /usr/local/mysql/support-files/mysql.server  Installing the Cross compile tools    brew install musl-cross &amp;ndash;with-arm &amp;ndash;with-mips
 chrome 跨域    &amp;ndash;disable-web-security &amp;ndash;user-data-dir
-#mysql 查看和打开日志 SHOW VARIABLES LIKE &amp;ldquo;general_log%&amp;quot;;
+mysql 查看和打开日志    SHOW VARIABLES LIKE &amp;ldquo;general_log%&amp;quot;;
 SET GLOBAL general_log = &amp;lsquo;ON&amp;rsquo;;</description>
     </item>
     
@@ -262,8 +272,17 @@ SET GLOBAL general_log = &amp;lsquo;ON&amp;rsquo;;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://woody010.github.io/02-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Vim/</guid>
-      <description>Vim    ^ 行首 $ 行尾 0 第一个字符
-gg 文件头 G 文件尾</description>
+      <description>Vim快捷键    移动光标    ^ 行首
+$ 行尾
+0 第一个字符
+gg 文件头
+G 文件尾
+w 移动一个单词
+插件管理和安装    插件管理工具Vundle    安装插件
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 参考Vundle文档
+常用的插件    ~/.vimrc
+Plugin &#39;tpope/vim-fugitive&#39; Plugin &#39;tpope/vim-sensible&#39; Plugin &#39;fatih/vim-go&#39; Plugin &#39;preservim/nerdtree&#39; Plugin &#39;airblade/vim-gitgutter&#39; Plugin &#39;altercation/vim-colors-solarized&#39; Plugin &#39;godlygeek/tabular&#39; Plugin &#39;plasticboy/vim-markdown&#39; Plugin &#39;pangloss/vim-javascript&#39; 自动增加文件头
+autocmd BufNewFile *.go exec &amp;quot;:call AddTitleForGolang()&amp;quot; function AddTitleForGolang() call append(0,&amp;quot;/**&amp;quot;) call append(1,&amp;quot; * @Author : Woody(28048038@qq.</description>
     </item>
     
   </channel>

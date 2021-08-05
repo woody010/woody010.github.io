@@ -22,5 +22,15 @@ http://www.openculture.com/ http://successfulenglish.com/
 1999: Holes by Louis Sachar (Publisher: Frances Foster) This is an adventure and mystery story involving a group of boys being made to dig holes as punishment.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://woody010.github.io/20-%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/%E5%88%9D%E4%B8%AD%E6%95%B0%E5%AD%A6/</guid>
+      <description>KaTeX       \[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]  KaTeX can also be used inline, for example \(\pi(x)\)  or used with a display setting. for example display: block:
+\[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\]  二次函数一般式： \[y=ax^2&amp;#43;bx&amp;#43;c\ \ (a\not=0)\]    sequenceDiagram Alice-Bob: Hello Bob, how are you? alt is sick Bob-Alice: Not so good :( else is well Bob-Alice: Feeling fresh like a daisy end opt Extra response Bob-Alice: Thanks for asking end  </description>
+    </item>
+    
   </channel>
 </rss>

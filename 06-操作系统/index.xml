@@ -22,7 +22,7 @@
       <guid>http://woody010.github.io/06-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/MacOSX/</guid>
       <description>mysqld    /usr/local/mysql/support-files/mysql.server  Installing the Cross compile tools    brew install musl-cross &amp;ndash;with-arm &amp;ndash;with-mips
 chrome 跨域    &amp;ndash;disable-web-security &amp;ndash;user-data-dir
-#mysql 查看和打开日志 SHOW VARIABLES LIKE &amp;ldquo;general_log%&amp;quot;;
+mysql 查看和打开日志    SHOW VARIABLES LIKE &amp;ldquo;general_log%&amp;quot;;
 SET GLOBAL general_log = &amp;lsquo;ON&amp;rsquo;;</description>
     </item>
     
